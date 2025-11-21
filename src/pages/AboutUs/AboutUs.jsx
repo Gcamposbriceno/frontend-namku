@@ -3,11 +3,7 @@ import TeamMember from "../../components/TeamMember/TeamMember";
 import DownloadButton from "../../components/DownloadButton/DownloadButton";
 import "./AboutUs.css";
 
-// 1. IMPORTACIÓN DE ASSETS (Archivos)
-// Al importarlos arriba, Vite se encarga de encontrar la ruta real en el build
 import estatuto from "../../assets/estatuto.pdf";
-
-// Importamos las fotos del equipo
 import hernandezImg from "../../assets/equipo/hernandez.jpg";
 import salahImg from "../../assets/equipo/salah.jpg";
 import ananiasImg from "../../assets/equipo/ananias.jpg";
@@ -15,6 +11,7 @@ import pauletteImg from "../../assets/equipo/paulette.jpg";
 import marcelaImg from "../../assets/equipo/marcela.jpg";
 import nicoleImg from "../../assets/equipo/nicole.jpg";
 import vicenteImg from "../../assets/equipo/vicente.jpg";
+import titleImg from "../../assets/Fotos para web/_AGS2779.jpg";
 
 function AboutUs() {
   useEffect(() => {
@@ -23,8 +20,19 @@ function AboutUs() {
 
   return (
     <div className="content">
-      <h1 className="page-title">Nosotros</h1>
-
+      <div>
+        <img
+          src={titleImg}
+          alt="imagen de nuestro equipo"
+          className="title-bg"
+          style={{ objectPosition: "center 70%" }}
+        />
+        <div className="title-dark-tint"></div>
+        <div className="page-title-container">
+          <h1 className="page-title">Nosotros</h1>
+        </div>
+      </div>
+      <div className="title-break"></div>
       <div className="section">
         <h2>¿Quiénes somos?</h2>
         <p>
@@ -152,7 +160,7 @@ function AboutUs() {
           </TeamMember>
         </div>
 
-        <div>
+        <div className="section">
           <h2>Estatuto</h2>
           <p>
             "Fundación para la Fauna Silvestre Ñamku" es una fundación de

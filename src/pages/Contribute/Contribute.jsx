@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import "./Contribute.css";
 import PaymentButton from "../../components/PaymentButton/PaymentButton";
+import titleImg from "../../assets/Fotos para web/_AGS4956.jpg";
+import sponsorImg from "../../assets/Fotos para web/_AGS8472-2.jpg";
 
 function Contribute() {
   useEffect(() => {
@@ -9,7 +11,19 @@ function Contribute() {
   }, []);
   return (
     <div className="content">
-      <h1 className="page-title">Colabora</h1>
+      <div>
+        <img
+          src={titleImg}
+          alt="imagen de nuestro equipo"
+          className="title-bg"
+          style={{ objectPosition: "0% center" }}
+        />
+        <div className="title-dark-tint"></div>
+        <div className="page-title-container">
+          <h1 className="page-title">Colabora</h1>
+        </div>
+      </div>
+      <div className="title-break"></div>
       <div className="contact-row section">
         <div className="contact-row-text">
           <h2>Colabora con Nosotros</h2>
@@ -29,8 +43,8 @@ function Contribute() {
           <ContactForm />
         </div>
       </div>
-      <div className="contact-row section">
-        <div className="contact-row-text">
+      <div className="row alt-bg">
+        <div className="section">
           <h2>Conviértete en un Patrocinador</h2>
           <p>
             Ayúdanos a cuidar y proteger a las especies. Puedes contribuir al
@@ -41,6 +55,7 @@ function Contribute() {
           </p>
           <PaymentButton />
         </div>
+        <img src={sponsorImg} alt="imagen de pajaro" className="section-img" />
       </div>
     </div>
   );

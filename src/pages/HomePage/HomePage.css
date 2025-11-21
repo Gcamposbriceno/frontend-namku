@@ -88,17 +88,3 @@
   bottom: 30px !important;
   z-index: 10;
 }
-
-.btn-call-to-action {
-  background-color: var(--color-primary);
-  color: var(--color-bg);
-  border: none;
-  padding: 20px 40px;
-}
-
-.btn-call-to-action a {
-  color: var(--color-bg);
-  text-decoration: none;
-  font-weight: bold;
-  font-size: large;
-}
