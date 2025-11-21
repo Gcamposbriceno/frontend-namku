@@ -11,6 +11,8 @@ import "./HomePage.css";
 import hero1 from "../../assets/img/mt-1475-home-header-bg.jpg";
 import hero2 from "../../assets/Fotos para web/_AGS2697.jpg";
 import hero3 from "../../assets/Fotos para web/_AGS8436.jpg";
+import zorrilloImg from "../../assets/Fotos para web/_AGS5398.jpg";
+import penguinImg from "../../assets/Fotos para web/_AGS4888.jpg";
 
 function HomePage() {
   useEffect(() => {
@@ -51,7 +53,12 @@ function HomePage() {
           </SwiperSlide>
 
           <SwiperSlide className="slide-content">
-            <img src={hero3} alt="Nature 3" className="slide-bg" />
+            <img
+              src={hero3}
+              alt="Nature 3"
+              className="slide-bg"
+              style={{ objectPosition: "center bottom" }}
+            />
             <div className="hero-dark-tint"></div>
             <div className="slide-text-container">
               <h2>Ayúdanos a Ayudarlos</h2>
@@ -78,8 +85,8 @@ function HomePage() {
           perpetuación de las diversas especies existentes en nuestro país.
         </p>
       </div>
-      <div className="row alt-bg section">
-        <div className="row-child">
+      <div className="alt-bg">
+        <div className="section">
           <h2>¿Qué Hacemos?</h2>
           <h3>
             Comienza el invierno y una hembra de zorro culpeo recorre el bosque
@@ -91,10 +98,11 @@ function HomePage() {
             para conejos, le impide lograrlo.
           </p>
         </div>
+        <img className="section-img" src={zorrilloImg} alt="imagen" />
       </div>
       <InstagramCarousel />
-      <div className="section row">
-        <div className="row-child">
+      <div className="row">
+        <div className="section">
           <h2>Colabora con Nosotros</h2>
           <h3>
             Regularmente, organizamos actividades abiertas para nuestros
@@ -104,7 +112,11 @@ function HomePage() {
             Para todos estos eventos necesitamos de tu ayuda colaborando en
             voluntariado, recursos materiales o recursos financieros.
           </p>
+          <button className="btn-call-to-action">
+            <Link to="/colabora">Colabora</Link>
+          </button>
         </div>
+        <img className="section-img" src={penguinImg} alt="imagen" />
       </div>
 
       <div className="row alt-bg">
@@ -113,6 +125,7 @@ function HomePage() {
           width="800"
           height="600"
           style={{ border: 0 }}
+          className="map-embed"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>

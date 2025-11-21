@@ -18,6 +18,15 @@
   place-items: center;
 }
 
+@keyframes slowZoom {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
 .slide-bg {
   position: absolute;
   top: 0;
@@ -26,6 +35,7 @@
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  animation: slowZoom 15s ease-in-out infinite alternate;
 }
 
 .slide-text-container {
