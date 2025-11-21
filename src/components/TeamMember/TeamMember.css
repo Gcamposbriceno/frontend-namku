@@ -14,3 +14,9 @@
   object-fit: cover;
   margin-bottom: 1rem;
 }
+
+.member-title {
+  color: var(--color-primary);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}

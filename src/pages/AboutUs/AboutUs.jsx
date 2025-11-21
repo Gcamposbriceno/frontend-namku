@@ -1,8 +1,20 @@
 import React, { useEffect } from "react";
 import TeamMember from "../../components/TeamMember/TeamMember";
-import estatuto from "../../assets/estatuto.pdf";
-import "./AboutUs.css";
 import DownloadButton from "../../components/DownloadButton/DownloadButton";
+import "./AboutUs.css";
+
+// 1. IMPORTACIÓN DE ASSETS (Archivos)
+// Al importarlos arriba, Vite se encarga de encontrar la ruta real en el build
+import estatuto from "../../assets/estatuto.pdf";
+
+// Importamos las fotos del equipo
+import hernandezImg from "../../assets/equipo/hernandez.jpg";
+import salahImg from "../../assets/equipo/salah.jpg";
+import ananiasImg from "../../assets/equipo/ananias.jpg";
+import pauletteImg from "../../assets/equipo/paulette.jpg";
+import marcelaImg from "../../assets/equipo/marcela.jpg";
+import nicoleImg from "../../assets/equipo/nicole.jpg";
+import vicenteImg from "../../assets/equipo/vicente.jpg";
 
 function AboutUs() {
   useEffect(() => {
@@ -12,6 +24,7 @@ function AboutUs() {
   return (
     <div className="content">
       <h1 className="page-title">Nosotros</h1>
+
       <div className="section">
         <h2>¿Quiénes somos?</h2>
         <p>
@@ -61,31 +74,35 @@ function AboutUs() {
           medioambiental.
         </p>
       </div>
+
       <div className="section">
         <h2>Nuestro Equipo de Trabajo</h2>
         <div className="team">
+          {/* 2. PASAMOS LA IMAGEN IMPORTADA COMO PROP 'image' */}
           <TeamMember
             name="Dr. Eduardo Hernández Antolisei"
             title="Director"
-            imageName="hernandez.jpg"
+            image={hernandezImg}
           >
             Médico Veterinario UST, doctor en Medicina y Sanidad Animal por la
             Universidad de Córdoba España. Docente en el área de cirugía de la
             Universidad Santo Tomás Viña del Mar.
           </TeamMember>
+
           <TeamMember
             name="Dr. Pablo Salah Jaar"
             title="Director"
-            imageName="salah.jpg"
+            image={salahImg}
           >
             Médico Veterinario UST, Magíster en Ciencias Veterinarias de la
             Universidad de Chile. Docente en el área de clínica equina de la
             Universidad Santo Tomás Viña del Mar.
           </TeamMember>
+
           <TeamMember
             name="Julio Ananías Cattan"
             title="Director"
-            imageName="ananias.jpg"
+            image={ananiasImg}
           >
             Ingeniero Civil de la Pontificia Universidad Católica de Chile.
             Oficial de Enlace en Chile para World Animal Protection. Se ha
@@ -94,37 +111,37 @@ function AboutUs() {
             desarrollando funciones en Marketing, Ventas, Relaciones
             Institucionales y Creación de Valor Compartido.
           </TeamMember>
-          <TeamMember
-            name="Paulette Abarca Mora"
-            title=""
-            imageName="paulette.jpg"
-          >
+
+          <TeamMember name="Paulette Abarca Mora" title="" image={pauletteImg}>
             Médico Veterinario, especialista en fauna silvestre con experiencia
             en manejo y bienestar animal en fauna silvestre, participante de
             proyectos de investigación del Museo de Historia Natural en fauna
             silvestre endémica. Encargada del Área de Salud del Centro de
             Rescate Ñamku.
           </TeamMember>
+
           <TeamMember
             name="Marcela Maturana Tealdo"
             title=""
-            imageName="marcela.jpg"
+            image={marcelaImg}
           >
             Licenciada en ciencias veterinarias con formación en ecología y
             ambiente, participación activa en centro de rehabilitación de aves
             rapaces Ñamku. Coordinadora de medios audiovisuales, redes y
             comunicación externa de Fundación para la Fauna Silvestre Ñamku.
           </TeamMember>
-          <TeamMember name="Nicole Heck Madina" title="" imageName="nicole.jpg">
+
+          <TeamMember name="Nicole Heck Madina" title="" image={nicoleImg}>
             Licenciada en Ciencias Veterinarias con experiencia nacional e
             internacional en rescate, manejo y rehabilitación de fauna marina.
             Participación activa en siniestros marinos acontecidos en la V
             región. Coordinadora de Voluntariado en Fundación Ñamku.
           </TeamMember>
+
           <TeamMember
             name="Vicente González Olivares"
             title=""
-            imageName="vicente.jpg"
+            image={vicenteImg}
           >
             Médico Veterinario, Especialista en Fauna Silvestre y Monitor de
             Humedales, encargado del Área de Salud del Centro de Rescate Ñamku,
@@ -134,6 +151,7 @@ function AboutUs() {
             región.
           </TeamMember>
         </div>
+
         <div>
           <h2>Estatuto</h2>
           <p>
