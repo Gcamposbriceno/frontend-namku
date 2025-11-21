@@ -1,0 +1,16 @@
+#eapps-instagram-feed-3 {
+  max-width: 90%;
+}
+
+.es-widget-title {
+  color: var(--color-primary);
+  font-family: var(--font-family-primary);
+}
+
+.es-layout-carousel-arrow {
+  background-color: var(--color-primary) !important;
+}
+
+.es-layout-carousel-arrow:hover {
+  background-color: var(--color-accent) !important;
+}

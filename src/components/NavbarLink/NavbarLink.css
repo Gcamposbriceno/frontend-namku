@@ -1,0 +1,22 @@
+.navbar-link {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-bg);
+  text-decoration: inherit;
+  cursor: pointer;
+  width: 6em;
+}
+
+.navbar-link:hover {
+  color: var(--color-accent);
+}
+
+.active-link {
+  color: var(--color-accent);
+  background-color: var(--color-bg);
+}

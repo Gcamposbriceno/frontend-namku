@@ -1,0 +1,42 @@
+/* 1. The Hero Section (Your div) */
+.hero-section {
+  /* Takes up 100% of the viewport height */
+  height: 100vh;
+  width: 100%;
+
+  /* The Background Image */
+  background-image: url("/public/landing-image.jpg"); /* Put image in public folder! */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Centering the text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Text Styling for contrast */
+  color: white;
+  text-align: center;
+}
+
+/* Optional: Dark overlay so text is readable */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4); /* 40% black tint */
+  z-index: 1;
+}
+
+/* Ensure text sits above the overlay */
+.hero-section h1,
+.hero-section h2 {
+  z-index: 2;
+  position: relative;
+  color: var(--color-secondary);
+}

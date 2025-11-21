@@ -1,0 +1,130 @@
+:root {
+  --font-family-primary: "Skranji", Arial, sans-serif;
+  --primary-font-weight: 400;
+  --heading-font-weight: 700;
+
+  --color-primary: #3b6490;
+  --color-secondary: #4a92b3;
+  --color-accent: #59c1d6;
+  --color-bg: #f0f2f2;
+  --color-text: #999999;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-weight: var(--primary-font-weight);
+
+  background-color: var(--color-bg);
+  color: var(--color-text);
+
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-primary);
+  color: var(--color-primary);
+  text-align: center;
+}
+
+h1 {
+  font-weight: var(--heading-font-weight);
+  font-size: 6em;
+  line-height: 1.1;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-weight: var(--primary-font-weight);
+  font-size: 2em;
+}
+
+h3 {
+  font-weight: var(--primary-font-weight);
+  font-size: 1.75em;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: var(--primary-font-weight);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+button:hover {
+  background-color: var(--color-accent);
+  box-shadow: var(--color-primary) 0px 0px 8px;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.section {
+  margin: 2em 0 !important;
+  padding: 2em !important;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.row-child {
+  flex: 1;
+  margin: 1em;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 3em;
+}
+
+.alt-bg {
+  background-color: var(--color-secondary);
+}
+
+.alt-bg h2,
+.alt-bg h3,
+.alt-bg p {
+  color: var(--color-bg);
+}
+
+.content.home-page {
+  padding-top: 0;
+}
