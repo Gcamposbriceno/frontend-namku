@@ -1,6 +1,16 @@
 import React, { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
 import InstagramCarousel from "../../components/InstagramCarousel/InstagramCarousel.jsx";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/pagination";
 import "./HomePage.css";
+
+import hero1 from "../../assets/img/mt-1475-home-header-bg.jpg";
+import hero2 from "../../assets/Fotos para web/_AGS2697.jpg";
+import hero3 from "../../assets/Fotos para web/_AGS8436.jpg";
 
 function HomePage() {
   useEffect(() => {
@@ -9,9 +19,48 @@ function HomePage() {
 
   return (
     <div className="content home-page">
-      <div className="hero-section">
-        <h1>BIENVENIDOS A ÑAMKU</h1>
-        <h2>Fundación Para la Fauna Silvestre</h2>
+      <div className="hero-wrapper">
+        <Swiper
+          modules={[Autoplay, EffectFade, Pagination]}
+          effect="fade"
+          spaceBetween={0}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          loop={true}
+          className="hero-swiper"
+        >
+          <SwiperSlide className="slide-content">
+            <img src={hero1} alt="Nature 1" className="slide-bg" />
+            <div className="hero-dark-tint"></div>
+            <div className="slide-text-container">
+              <h1>BIENVENIDOS A ÑAMKU</h1>
+              <h3>Fundación Para la Fauna Silvestre</h3>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="slide-content">
+            <img src={hero2} alt="Nature 2" className="slide-bg" />
+            <div className="hero-dark-tint"></div>
+            <div className="slide-text-container">
+              <h2>Conoce quiénes somos</h2>
+              <button className="btn-call-to-action">
+                <Link to="/nosotros">Nosotros</Link>
+              </button>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="slide-content">
+            <img src={hero3} alt="Nature 3" className="slide-bg" />
+            <div className="hero-dark-tint"></div>
+            <div className="slide-text-container">
+              <h2>Ayúdanos a Ayudarlos</h2>
+              <button className="btn-call-to-action">
+                <Link to="/colabora">Colabora con Ñamku</Link>
+              </button>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
       <div className="section">
         <h3>Nuestra Motivación</h3>

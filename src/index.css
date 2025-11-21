@@ -1,5 +1,6 @@
 :root {
-  --font-family-primary: "Skranji", Arial, sans-serif;
+  --font-family-heading: "Skranji", Arial, sans-serif;
+  --font-family-primary: "Arial", sans-serif;
   --primary-font-weight: 400;
   --heading-font-weight: 700;
 
@@ -25,8 +26,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: var(--font-family-primary);
+h6,
+a {
+  font-family: var(--font-family-heading);
   color: var(--color-primary);
   text-align: center;
 }

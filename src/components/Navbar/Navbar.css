@@ -13,24 +13,23 @@
   transition: background-color 0.3s ease;
 }
 
-/* STATE 1: Transparent (Default) */
 .navbar.transparent {
   background-color: transparent;
-  box-shadow: none; /* Remove shadow when transparent */
+  box-shadow: none;
 }
 
-/* STATE 2: Solid (When scrolled) */
 .navbar.scrolled {
-  background-color: var(--color-primary); /* #3b6490 */
+  background-color: var(--color-primary);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo {
   padding-left: 2em;
+  height: 100%;
 }
 
 .logo {
-  width: 4rem;
+  height: 100%;
 }
 
 .links {

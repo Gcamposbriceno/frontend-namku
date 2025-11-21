@@ -4,7 +4,7 @@
 
 .es-widget-title {
   color: var(--color-primary);
-  font-family: var(--font-family-primary);
+  font-family: var(--font-family-heading);
 }
 
 .es-layout-carousel-arrow {
