@@ -5,6 +5,10 @@
   padding-bottom: 2rem !important;
 }
 
+.alt-bg .es-widget-title {
+  color: var(--color-bg) !important;
+}
+
 .elfsight-app-e03c4be4-b994-4284-ba95-ecd5115ee9da {
   padding: 0 !important;
   max-width: 90% !important;

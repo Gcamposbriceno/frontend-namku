@@ -9,8 +9,8 @@ import "swiper/css/pagination";
 import "./HomePage.css";
 
 import hero1 from "../../assets/img/mt-1475-home-header-bg.jpg";
-import hero2 from "../../assets/Fotos para web/_AGS2697.jpg";
-import hero3 from "../../assets/Fotos para web/_AGS8436.jpg";
+import campanaImg from "../../assets/2LucaxlaFauna_Mesa de trabajo 1 copia 2.png";
+import hero3 from "../../assets/Fotos para web/_AGS2697.jpg";
 import zorrilloImg from "../../assets/Fotos para web/_AGS5398.jpg";
 import penguinImg from "../../assets/Fotos para web/_AGS4888.jpg";
 
@@ -42,28 +42,22 @@ function HomePage() {
           </SwiperSlide>
 
           <SwiperSlide className="slide-content">
-            <img src={hero2} alt="Nature 2" className="slide-bg" />
+            <Link to="/colabora">
+              <img
+                src={campanaImg}
+                alt="Nature 2"
+                className="slide-bg-no-anim"
+              />
+            </Link>
+          </SwiperSlide>
+
+          <SwiperSlide className="slide-content">
+            <img src={hero3} alt="Nature 3" className="slide-bg" />
             <div className="hero-dark-tint"></div>
             <div className="slide-text-container">
               <h2>Conoce quiénes somos</h2>
               <button className="btn-call-to-action">
                 <Link to="/nosotros">Nosotros</Link>
-              </button>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="slide-content">
-            <img
-              src={hero3}
-              alt="Nature 3"
-              className="slide-bg"
-              style={{ objectPosition: "center bottom" }}
-            />
-            <div className="hero-dark-tint"></div>
-            <div className="slide-text-container">
-              <h2>Ayúdanos a Ayudarlos</h2>
-              <button className="btn-call-to-action">
-                <Link to="/colabora">Colabora con Ñamku</Link>
               </button>
             </div>
           </SwiperSlide>

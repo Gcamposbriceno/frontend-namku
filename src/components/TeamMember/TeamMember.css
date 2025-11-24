@@ -1,22 +1,67 @@
-.team-member {
-  max-width: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.team-member-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden; /* Keeps the zoomed image inside the corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-bottom: 3px solid transparent; /* Pre-reserve space for border */
+}
+
+.team-member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.member-img-wrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.member-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  filter: grayscale(100%);
+  transform: scale(1);
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.team-member-card:hover .member-img-wrapper img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.member-content {
+  padding: 1.5rem;
   text-align: center;
 }
 
-.team-member img {
-  width: 150px;
-  height: 150px;
-  border: 2px solid var(--color-accent);
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
+.member-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 700;
 }
 
-.member-title {
+.member-role {
+  display: inline-block;
+  margin: 0.5rem 0 1rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   color: var(--color-primary);
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  background: rgba(59, 100, 144, 0.1); /* Light blue background */
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.member-bio {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin-top: 0.5rem;
 }

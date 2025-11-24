@@ -18,6 +18,51 @@ function AboutUs() {
     document.title = "Ñamku - Nosotros";
   }, []);
 
+  const teamData = [
+    {
+      name: "Dr. Eduardo Hernández Antolisei",
+      title: "Director",
+      image: hernandezImg,
+      bio: "Médico Veterinario UST, doctor en Medicina y Sanidad Animal por la Universidad de Córdoba España. Docente en el área de cirugía de la Universidad Santo Tomás Viña del Mar.",
+    },
+    {
+      name: "Dr. Pablo Salah Jaar",
+      title: "Director",
+      image: salahImg,
+      bio: "Médico Veterinario UST, Magíster en Ciencias Veterinarias de la Universidad de Chile. Docente en el área de clínica equina de la Universidad Santo Tomás Viña del Mar.",
+    },
+    {
+      name: "Julio Ananías Cattan",
+      title: "Director",
+      image: ananiasImg,
+      bio: "Ingeniero Civil de la PUC. Oficial de Enlace para World Animal Protection. Experto en Marketing, Ventas y Relaciones Institucionales.",
+    },
+    {
+      name: "Paulette Abarca Mora",
+      title: "",
+      image: pauletteImg,
+      bio: "Médico Veterinario, especialista en manejo y bienestar animal en fauna silvestre. Participante de proyectos del Museo de Historia Natural.",
+    },
+    {
+      name: "Marcela Maturana Tealdo",
+      title: "",
+      image: marcelaImg,
+      bio: "Licenciada en ciencias veterinarias. Coordinadora de medios audiovisuales, redes y comunicación externa de Fundación Ñamku.",
+    },
+    {
+      name: "Nicole Heck Madina",
+      title: "",
+      image: nicoleImg,
+      bio: "Licenciada en Ciencias Veterinarias con experiencia internacional en rescate y rehabilitación de fauna marina.",
+    },
+    {
+      name: "Vicente González Olivares",
+      title: "",
+      image: vicenteImg,
+      bio: "Médico Veterinario, Especialista en Fauna Silvestre y Monitor de Humedales. Experiencia en rescate de fauna marina.",
+    },
+  ];
+
   return (
     <div className="content">
       <div>
@@ -85,101 +130,38 @@ function AboutUs() {
 
       <div className="section">
         <h2>Nuestro Equipo de Trabajo</h2>
-        <div className="team">
-          {/* 2. PASAMOS LA IMAGEN IMPORTADA COMO PROP 'image' */}
-          <TeamMember
-            name="Dr. Eduardo Hernández Antolisei"
-            title="Director"
-            image={hernandezImg}
-          >
-            Médico Veterinario UST, doctor en Medicina y Sanidad Animal por la
-            Universidad de Córdoba España. Docente en el área de cirugía de la
-            Universidad Santo Tomás Viña del Mar.
-          </TeamMember>
-
-          <TeamMember
-            name="Dr. Pablo Salah Jaar"
-            title="Director"
-            image={salahImg}
-          >
-            Médico Veterinario UST, Magíster en Ciencias Veterinarias de la
-            Universidad de Chile. Docente en el área de clínica equina de la
-            Universidad Santo Tomás Viña del Mar.
-          </TeamMember>
-
-          <TeamMember
-            name="Julio Ananías Cattan"
-            title="Director"
-            image={ananiasImg}
-          >
-            Ingeniero Civil de la Pontificia Universidad Católica de Chile.
-            Oficial de Enlace en Chile para World Animal Protection. Se ha
-            desempeñado en importantes empresas chilenas de la industria
-            alimenticia, farmacéutica, productos escolares y educación superior,
-            desarrollando funciones en Marketing, Ventas, Relaciones
-            Institucionales y Creación de Valor Compartido.
-          </TeamMember>
-
-          <TeamMember name="Paulette Abarca Mora" title="" image={pauletteImg}>
-            Médico Veterinario, especialista en fauna silvestre con experiencia
-            en manejo y bienestar animal en fauna silvestre, participante de
-            proyectos de investigación del Museo de Historia Natural en fauna
-            silvestre endémica. Encargada del Área de Salud del Centro de
-            Rescate Ñamku.
-          </TeamMember>
-
-          <TeamMember
-            name="Marcela Maturana Tealdo"
-            title=""
-            image={marcelaImg}
-          >
-            Licenciada en ciencias veterinarias con formación en ecología y
-            ambiente, participación activa en centro de rehabilitación de aves
-            rapaces Ñamku. Coordinadora de medios audiovisuales, redes y
-            comunicación externa de Fundación para la Fauna Silvestre Ñamku.
-          </TeamMember>
-
-          <TeamMember name="Nicole Heck Madina" title="" image={nicoleImg}>
-            Licenciada en Ciencias Veterinarias con experiencia nacional e
-            internacional en rescate, manejo y rehabilitación de fauna marina.
-            Participación activa en siniestros marinos acontecidos en la V
-            región. Coordinadora de Voluntariado en Fundación Ñamku.
-          </TeamMember>
-
-          <TeamMember
-            name="Vicente González Olivares"
-            title=""
-            image={vicenteImg}
-          >
-            Médico Veterinario, Especialista en Fauna Silvestre y Monitor de
-            Humedales, encargado del Área de Salud del Centro de Rescate Ñamku,
-            con Formación en Ecología y Ambiente, con experiencia nacional e
-            internacional en Rescate y Rehabilitación de Fauna Marina y
-            participación activa en siniestros marinos acontecidos en la V
-            región.
-          </TeamMember>
+        <div className="team-grid">
+          {teamData.map((member, index) => (
+            <TeamMember
+              key={index}
+              name={member.name}
+              title={member.title}
+              image={member.image}
+            >
+              {member.bio}
+            </TeamMember>
+          ))}
         </div>
+      </div>
 
-        <div className="section">
-          <h2>Estatuto</h2>
-          <p>
-            "Fundación para la Fauna Silvestre Ñamku" es una fundación de
-            beneficencia, sin fines de lucro, que se rige por las normas de
-            Título XXXIII del Libro Primero del Código. Entre nuestros objetivos
-            se encuentran: el rescate y la rehabilitación de la fauna silvestre
-            chilena -tanto marina como terrestre-; la promoción del desarrollo y
-            la investigación en el área de la fauna silvestre; la promoción de
-            la educación ambiental y de la conservación de las especies y; el
-            apoyo para el desarrollo de políticas públicas relativas a la
-            conservación del medio ambiente y de las especies animales nativas,
-            entre otros.
-          </p>
-          <div className="estatuto-download">
-            <h3>Si quieres conocer más, ¡revisa nuestro estatuto!</h3>
-            <DownloadButton href={estatuto} download="estatuto-namku.pdf">
-              Descargar Estatuto
-            </DownloadButton>
-          </div>
+      <div className="section">
+        <h2>Estatuto</h2>
+        <p>
+          "Fundación para la Fauna Silvestre Ñamku" es una fundación de
+          beneficencia, sin fines de lucro, que se rige por las normas de Título
+          XXXIII del Libro Primero del Código. Entre nuestros objetivos se
+          encuentran: el rescate y la rehabilitación de la fauna silvestre
+          chilena -tanto marina como terrestre-; la promoción del desarrollo y
+          la investigación en el área de la fauna silvestre; la promoción de la
+          educación ambiental y de la conservación de las especies y; el apoyo
+          para el desarrollo de políticas públicas relativas a la conservación
+          del medio ambiente y de las especies animales nativas, entre otros.
+        </p>
+        <div className="estatuto-download">
+          <h3>Si quieres conocer más, ¡revisa nuestro estatuto!</h3>
+          <DownloadButton href={estatuto} download="estatuto-namku.pdf">
+            Descargar Estatuto
+          </DownloadButton>
         </div>
       </div>
     </div>

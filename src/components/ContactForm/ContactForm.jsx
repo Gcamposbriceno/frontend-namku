@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ContactForm.css";
 
-function ContactForm({ footer }) {
+function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -66,8 +66,6 @@ function ContactForm({ footer }) {
   return (
     <div className="contact-form-container">
       <form className="contact-form" onSubmit={handleSubmit} noValidate>
-        {!footer && <h2>Contáctanos</h2>}
-
         <div className="form-group">
           <label htmlFor="name">Nombre</label>
           <input
@@ -106,7 +104,7 @@ function ContactForm({ footer }) {
             value={formData.message}
             onChange={handleChange}
             className={errors.message ? "error" : ""}
-            placeholder="¿Cómo quieres colaborar con nosotros?"
+            placeholder="Envíanos un mensaje"
           ></textarea>
           {errors.message && (
             <span className="error-message">{errors.message}</span>

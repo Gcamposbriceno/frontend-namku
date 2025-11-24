@@ -44,7 +44,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="icon-link whatsapp"
-                aria-label="Chat on WhatsApp"
+                aria-label="Envíanos un WhatsApp"
               >
                 <FaWhatsapp size={24} />
                 <span>+56 9 1234 5678</span>
@@ -55,7 +55,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="icon-link instagram"
-                aria-label="Follow us on Instagram"
+                aria-label="Síguenos en Instagram"
               >
                 <FaInstagram size={24} />
                 <span>@fundacion_namku</span>
@@ -83,7 +83,7 @@ function Footer() {
         </div>
 
         <div className="footer-column form-column">
-          <ContactForm footer={true} />
+          <ContactForm />
         </div>
       </div>
 

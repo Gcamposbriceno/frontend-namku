@@ -1,8 +1,8 @@
-.team {
-  display: flex;
-  flex-wrap: wrap;
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  justify-content: space-around;
+  margin-top: 2rem;
 }
 
 .estatuto-download {
