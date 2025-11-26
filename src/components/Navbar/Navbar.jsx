@@ -3,12 +3,19 @@ import whiteLogo from "../../assets/white.svg";
 import NavbarLink from "../NavbarLink/NavbarLink";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const [isOpen, setIsOpen] = useState(false);
+
   const location = useLocation();
   const isHomePage = location.pathname === "/";
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  const closeMenu = () => setIsOpen(false);
 
   useEffect(() => {
     if (!isHomePage) {
@@ -19,11 +26,17 @@ function Navbar() {
     setIsScrolled(false);
 
     const handleScroll = () => {
-      // window.innerHeight is the height of the viewport (the hero image height)
-      // We subtract roughly 80px (navbar height) so it turns solid right before leaving the image
-      const heroHeight = window.innerHeight - 80;
+      const heroElement = document.getElementById("hero-section");
 
-      if (window.scrollY > heroHeight) {
+      let threshold;
+
+      if (heroElement) {
+        threshold = heroElement.offsetHeight - 80;
+      } else {
+        threshold = window.innerHeight - 80;
+      }
+
+      if (window.scrollY > threshold) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -32,31 +45,47 @@ function Navbar() {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup function to remove listener when component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [isHomePage]);
 
   return (
-    <nav className={`navbar ${isScrolled ? "scrolled" : "transparent"}`}>
+    <nav
+      className={`navbar ${
+        !isHomePage || isScrolled || isOpen ? "scrolled" : "transparent"
+      }`}
+    >
       <div className="navbar-logo">
-        <Link to="/">
+        <Link to="/" onClick={closeMenu}>
           <img src={whiteLogo} className="logo" alt="White logo" />
         </Link>
       </div>
-      <ul className="links">
-        <li>
-          <NavbarLink to="/">Inicio</NavbarLink>
+
+      <div className="menu-icon" onClick={toggleMenu}>
+        {isOpen ? <FaTimes /> : <FaBars />}
+      </div>
+
+      <ul className={isOpen ? "links active" : "links"}>
+        <li className="nav-item">
+          <NavbarLink to="/" onClick={closeMenu}>
+            Inicio
+          </NavbarLink>
         </li>
-        <li>
-          <NavbarLink to="/nosotros">Nosotros</NavbarLink>
+        <li className="nav-item">
+          <NavbarLink to="/nosotros" onClick={closeMenu}>
+            Nosotros
+          </NavbarLink>
         </li>
-        <li>
-          <NavbarLink to="/colabora">Colabora</NavbarLink>
+        <li className="nav-item">
+          <NavbarLink to="/colabora" onClick={closeMenu}>
+            Colabora
+          </NavbarLink>
         </li>
-        <li>
-          <NavbarLink to="/contacto">Contacto</NavbarLink>
+        <li className="nav-item">
+          <NavbarLink to="/contacto" onClick={closeMenu}>
+            Contacto
+          </NavbarLink>
         </li>
       </ul>
     </nav>

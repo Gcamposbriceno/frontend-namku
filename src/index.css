@@ -192,6 +192,13 @@ button:focus-visible {
   font-size: large;
 }
 
+.map-embed {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  display: block;
+}
+
 @media (max-width: 1024px) {
   .section {
     max-width: 92% !important;
@@ -235,11 +242,21 @@ button:focus-visible {
   }
 
   .title-break {
-    height: 8vh;
+    height: 10vh;
   }
 
   .btn-call-to-action {
     padding: 12px 20px;
+  }
+
+  .title-bg,
+  .title-dark-tint {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .map-embed {
+    height: 400px;
   }
 }
 
@@ -260,14 +277,5 @@ button:focus-visible {
 @media (max-width: 480px) {
   .navbar {
     height: 3.4em;
-  }
-
-  .hero-wrapper {
-    height: 70vh;
-  }
-
-  .slide-text-container h2 {
-    font-size: 1.25rem;
-    margin-bottom: 1.25rem;
   }
 }

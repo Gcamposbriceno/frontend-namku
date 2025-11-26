@@ -11,6 +11,7 @@
   align-items: center;
   height: 4em;
   transition: background-color 0.3s ease;
+  box-sizing: border-box;
 }
 
 .navbar.transparent {
@@ -49,7 +50,18 @@ ul {
   flex-grow: 1;
 }
 
-@media (max-width: 768px) {
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: var(--color-bg);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1028px) {
+  .menu-icon {
+    display: block;
+  }
+
   .navbar {
     height: 3.5em;
     padding: 0 0.75rem;
@@ -60,6 +72,32 @@ ul {
   }
 
   .links {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh; /* Almost full screen */
+    position: absolute;
+    top: 100%; /* Push it down below the navbar header */
+    left: -100%; /* HIDE IT off-screen to the left */
+
+    /* Style the background */
+    background-color: var(
+      --color-primary
+    ); /* Needs solid color, not transparent */
+    opacity: 1;
+    transition: all 0.5s ease; /* Smooth slide effect */
+    align-items: center; /* Center text */
+    justify-content: flex-start;
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+
+  .links.active {
+    left: 0;
+  }
+
+  .links li {
+    flex-grow: 0;
+    height: auto;
   }
 }

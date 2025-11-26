@@ -21,7 +21,7 @@ function HomePage() {
 
   return (
     <div className="content home-page">
-      <div className="hero-wrapper">
+      <div className="hero-wrapper" id="hero-section">
         <Swiper
           modules={[Autoplay, EffectFade, Pagination]}
           effect="fade"
@@ -79,7 +79,7 @@ function HomePage() {
           perpetuación de las diversas especies existentes en nuestro país.
         </p>
       </div>
-      <div className="alt-bg">
+      <div className="row alt-bg">
         <div className="section">
           <h2>¿Qué Hacemos?</h2>
           <h3>

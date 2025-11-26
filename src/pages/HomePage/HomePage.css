@@ -101,7 +101,8 @@
 
 @media (max-width: 768px) {
   .hero-wrapper {
-    height: 70vh;
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 
   .slide-text-container h1 {
@@ -119,5 +120,12 @@
 
   .slide-text-container {
     padding: 0 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-text-container h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 }

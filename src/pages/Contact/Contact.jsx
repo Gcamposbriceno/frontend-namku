@@ -24,7 +24,7 @@ function Contact() {
         </div>
       </div>
       <div className="title-break"></div>
-      <div className="contact-row section">
+      <div className="row section">
         <div className="contact-row-text">
           <h2>Contáctanos</h2>
           <p>
@@ -49,8 +49,6 @@ function Contact() {
       <div className="row alt-bg">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16878.976804750895!2d-71.5107447896585!3d-32.918960285285316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689c3382b6c0391%3A0xf839772547101965!2sParque%20Ecol%C3%B3gico%20La%20Isla!5e0!3m2!1ses!2scl!4v1763088271742!5m2!1ses!2scl"
-          width="800"
-          height="600"
           style={{ border: 0 }}
           className="map-embed"
           loading="lazy"

@@ -24,7 +24,7 @@ function Contribute() {
         </div>
       </div>
       <div className="title-break"></div>
-      <div className="contact-row section">
+      <div className="row section">
         <div className="contact-row-text">
           <h2>Colabora con Nosotros</h2>
           <p>

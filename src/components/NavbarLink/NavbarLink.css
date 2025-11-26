@@ -20,3 +20,25 @@
   color: var(--color-accent);
   background-color: var(--color-bg);
 }
+
+@media screen and (max-width: 1028px) {
+  .navbar-link {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    display: table;
+    height: auto;
+  }
+
+  /* Optional: Hover effect for mobile links */
+  .navbar-link:hover {
+    background-color: var(--color-accent);
+    border-radius: 4px;
+  }
+
+  .active-link {
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+  }
+}
