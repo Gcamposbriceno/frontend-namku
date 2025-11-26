@@ -2,6 +2,15 @@ import React from "react";
 import "./WhatsAppButton.css";
 
 function WhatsAppButton() {
+  const HandleClick = () => {
+    const link = document.createElement("a");
+    link.href = "https://wa.me/56957620290";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.click();
+    link.remove();
+  };
+
   return (
     <button className="whatsapp-button">
       <div className="sign">

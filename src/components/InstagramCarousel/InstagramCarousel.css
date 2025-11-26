@@ -21,3 +21,14 @@
 .es-layout-carousel-arrow:hover {
   background-color: var(--color-accent) !important;
 }
+
+@media (max-width: 768px) {
+  .elfsight-app-e03c4be4-b994-4284-ba95-ecd5115ee9da {
+    max-width: 100% !important;
+  }
+
+  .es-widget-title {
+    font-size: 1.25rem !important;
+    padding-bottom: 1rem !important;
+  }
+}

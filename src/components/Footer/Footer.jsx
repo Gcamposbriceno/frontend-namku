@@ -40,14 +40,14 @@ function Footer() {
                 <span>info@namkufundacion.cl</span>
               </a>
               <a
-                href="https://wa.me/56912345678"
+                href="https://wa.me/56957620290"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="icon-link whatsapp"
                 aria-label="Envíanos un WhatsApp"
               >
                 <FaWhatsapp size={24} />
-                <span>+56 9 1234 5678</span>
+                <span>+56 9 5762 0290</span>
               </a>
 
               <a

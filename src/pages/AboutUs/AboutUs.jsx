@@ -144,24 +144,27 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className="section">
-        <h2>Estatuto</h2>
-        <p>
-          "Fundación para la Fauna Silvestre Ñamku" es una fundación de
-          beneficencia, sin fines de lucro, que se rige por las normas de Título
-          XXXIII del Libro Primero del Código. Entre nuestros objetivos se
-          encuentran: el rescate y la rehabilitación de la fauna silvestre
-          chilena -tanto marina como terrestre-; la promoción del desarrollo y
-          la investigación en el área de la fauna silvestre; la promoción de la
-          educación ambiental y de la conservación de las especies y; el apoyo
-          para el desarrollo de políticas públicas relativas a la conservación
-          del medio ambiente y de las especies animales nativas, entre otros.
-        </p>
-        <div className="estatuto-download">
-          <h3>Si quieres conocer más, ¡revisa nuestro estatuto!</h3>
-          <DownloadButton href={estatuto} download="estatuto-namku.pdf">
-            Descargar Estatuto
-          </DownloadButton>
+      <div className="row alt-bg">
+        <div className="section">
+          <h2>Estatuto</h2>
+          <p>
+            "Fundación para la Fauna Silvestre Ñamku" es una fundación de
+            beneficencia, sin fines de lucro, que se rige por las normas de
+            Título XXXIII del Libro Primero del Código. Entre nuestros objetivos
+            se encuentran: el rescate y la rehabilitación de la fauna silvestre
+            chilena -tanto marina como terrestre-; la promoción del desarrollo y
+            la investigación en el área de la fauna silvestre; la promoción de
+            la educación ambiental y de la conservación de las especies y; el
+            apoyo para el desarrollo de políticas públicas relativas a la
+            conservación del medio ambiente y de las especies animales nativas,
+            entre otros.
+          </p>
+          <div className="estatuto-download">
+            <h3>Si quieres conocer más, ¡revisa nuestro estatuto!</h3>
+            <DownloadButton href={estatuto} download="estatuto-namku.pdf">
+              Descargar Estatuto
+            </DownloadButton>
+          </div>
         </div>
       </div>
     </div>

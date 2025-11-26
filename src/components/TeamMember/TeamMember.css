@@ -65,3 +65,16 @@
   line-height: 1.5;
   margin-top: 0.5rem;
 }
+
+@media (max-width: 768px) {
+  .member-img-wrapper {
+    height: 180px;
+  }
+}
+
+@media (hover: none) {
+  .team-member-card:hover .member-img-wrapper img {
+    filter: grayscale(0%);
+    transform: none;
+  }
+}

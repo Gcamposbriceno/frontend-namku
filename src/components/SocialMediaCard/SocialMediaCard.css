@@ -128,3 +128,20 @@
 .card4:hover .email-card {
   fill: white;
 }
+
+@media (max-width: 420px) {
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 70px;
+    height: 70px;
+  }
+
+  .instagram-card,
+  .whatsapp-card,
+  .maps-card,
+  .email-card {
+    margin-left: 0.6em;
+  }
+}
