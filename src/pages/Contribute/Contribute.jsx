@@ -43,7 +43,7 @@ function Contribute() {
           <ContactForm />
         </div>
       </div>
-      <div className="row alt-bg">
+      <div className="row alt-bg" id="patrocina">
         <div className="section">
           <h2>Conviértete en un Patrocinador</h2>
           <p>

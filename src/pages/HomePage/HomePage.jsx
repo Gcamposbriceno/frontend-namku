@@ -42,7 +42,7 @@ function HomePage() {
           </SwiperSlide>
 
           <SwiperSlide className="slide-content">
-            <Link to="/colabora">
+            <Link to="/colabora#patrocina">
               <img
                 src={campanaImg}
                 alt="Nature 2"
