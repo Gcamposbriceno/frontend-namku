@@ -11,7 +11,7 @@ import pauletteImg from "../../assets/equipo/paulette.jpg";
 import marcelaImg from "../../assets/equipo/marcela.jpg";
 import nicoleImg from "../../assets/equipo/nicole.jpg";
 import vicenteImg from "../../assets/equipo/vicente.jpg";
-import titleImg from "../../assets/Fotos para web/_AGS2779.jpg";
+import titleImg from "../../assets/Fotos para web/_AGS8436.jpg";
 
 function AboutUs() {
   useEffect(() => {
@@ -70,7 +70,7 @@ function AboutUs() {
           src={titleImg}
           alt="imagen de nuestro equipo"
           className="title-bg"
-          style={{ objectPosition: "center 70%" }}
+          style={{ objectPosition: "0% 40%" }}
         />
         <div className="title-dark-tint"></div>
         <div className="page-title-container">

@@ -55,7 +55,7 @@ function Contact() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
         <div className="row-child">
-          <h2>Visítanos</h2>
+          <h2>Nuestra Ubicación</h2>
           <p>
             Parque Ecológico La Isla, Concón. Ruta F-30-E Km 1, Región de
             Valparaíso, Chile

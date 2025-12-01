@@ -10,9 +10,9 @@ import "./HomePage.css";
 
 import hero1 from "../../assets/img/mt-1475-home-header-bg.jpg";
 import campanaImg from "../../assets/2LucaxlaFauna_Mesa de trabajo 1 copia 2.png";
-import hero3 from "../../assets/Fotos para web/_AGS2697.jpg";
+import hero3 from "../../assets/Fotos para web/_AGS5860.jpg";
 import zorrilloImg from "../../assets/Fotos para web/_AGS5398.jpg";
-import penguinImg from "../../assets/Fotos para web/_AGS4888.jpg";
+import colaboraImg from "../../assets/Fotos para web/_AGS4948.jpg";
 
 function HomePage() {
   useEffect(() => {
@@ -52,7 +52,12 @@ function HomePage() {
           </SwiperSlide>
 
           <SwiperSlide className="slide-content">
-            <img src={hero3} alt="Nature 3" className="slide-bg" />
+            <img
+              src={hero3}
+              alt="Nature 3"
+              className="slide-bg"
+              style={{ objectPosition: "center bottom" }}
+            />
             <div className="hero-dark-tint"></div>
             <div className="slide-text-container">
               <h2>Conoce quiénes somos</h2>
@@ -110,7 +115,7 @@ function HomePage() {
             <Link to="/colabora">Colabora</Link>
           </button>
         </div>
-        <img className="section-img" src={penguinImg} alt="imagen" />
+        <img className="section-img" src={colaboraImg} alt="imagen" />
       </div>
 
       <div className="row alt-bg">
@@ -124,7 +129,7 @@ function HomePage() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
         <div className="row-child">
-          <h2>Visítanos</h2>
+          <h2>Nuestra Ubicación</h2>
           <p>
             Parque Ecológico La Isla, Concón. Ruta F-30-E Km 1, Región de
             Valparaíso, Chile
