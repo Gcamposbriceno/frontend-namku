@@ -9,8 +9,8 @@ import "swiper/css/pagination";
 import "./HomePage.css";
 
 import hero1 from "../../assets/img/mt-1475-home-header-bg.jpg";
-import campanaImg from "../../assets/2LucaxlaFauna_Mesa de trabajo 1 copia 2.png";
-import hero3 from "../../assets/Fotos para web/_AGS5860.jpg";
+import campanaImg from "../../assets/3LucaxlaFauna.png";
+import aboutUsHero from "../../assets/DSC_3147.jpg";
 import zorrilloImg from "../../assets/Fotos para web/_AGS5398.jpg";
 import colaboraImg from "../../assets/Fotos para web/_AGS4948.jpg";
 
@@ -53,16 +53,21 @@ function HomePage() {
 
           <SwiperSlide className="slide-content">
             <img
-              src={hero3}
+              src={aboutUsHero}
               alt="Nature 3"
               className="slide-bg"
-              style={{ objectPosition: "center bottom" }}
+              style={{ objectPosition: "center 40%" }}
             />
             <div className="hero-dark-tint"></div>
             <div className="slide-text-container">
               <h2>Conoce quiénes somos</h2>
-              <button className="btn-call-to-action">
-                <Link to="/nosotros">Nosotros</Link>
+              <button
+                className="btn-call-to-action"
+                onClick={() => {
+                  window.location.href = "/nosotros";
+                }}
+              >
+                <a>Nosotros</a>
               </button>
             </div>
           </SwiperSlide>
@@ -70,31 +75,49 @@ function HomePage() {
       </div>
       <div className="section">
         <h3>Nuestra Motivación</h3>
-        <h2>Rescate y la Rehabilitación</h2>
+        <h2>Rescate y Rehabilitación de Fauna Silvestre</h2>
         <p>
-          El desarrollo constante en las áreas de la agroindustria, extracción y
-          procesamiento de combustibles, minería, forestal, construcción, etc.
-          generan, inevitablemente, cambios en el medio ambiente y en los
-          diversos ecosistemas que lo forman. Estos cambios, finalmente
-          repercuten en las poblaciones de fauna nativa que en ellos habitan,
-          generando migraciones temporales o permanentes y, en casos más
-          extremos, la desaparición en dichas áreas geográficas. A las acciones
-          generadas es fundamental crear una acción que permita mitigar estos
-          cambios, con la finalidad de hacer compatibles el desarrollo con la
-          perpetuación de las diversas especies existentes en nuestro país.
+          El crecimiento de actividades humanas como la agroindustria, la
+          minería, la forestación, la construcción y la extracción de recursos
+          naturales, ha generado cambios profundos en los ecosistemas de nuestro
+          país.
+        </p>
+        <p>
+          Estas transformaciones impactan directamente en las poblaciones de
+          fauna nativa, provocando desplazamientos forzados, pérdida de hábitat
+          y, en los casos más extremos, la desaparición local de especies.
+        </p>
+        <p>
+          Frente a este escenario, nace nuestra motivación:{" "}
+          <b>proteger, rescatar y rehabilitar a la fauna silvestre</b> afectada
+          por la acción del ser humano, generando acciones concretas que
+          permitan mitigar estos impactos.
+        </p>
+        <p>
+          En Fundación Ñamku trabajamos para hacer compatible el desarrollo con
+          la conservación de la biodiversidad, promoviendo un equilibrio real
+          entre desarrollo y biodiversidad.
         </p>
       </div>
       <div className="row alt-bg">
         <div className="section">
           <h2>¿Qué Hacemos?</h2>
-          <h3>
-            Comienza el invierno y una hembra de zorro culpeo recorre el bosque
-            y los cerros en busca de su alimento.
-          </h3>
           <p>
-            Durante el atardecer ha hecho varios intentos de cazar una presa,
-            pero una grave lesión en una de sus patas, causada por una trampa
-            para conejos, le impide lograrlo.
+            Cada rescate es una historia de esperanza.{" "}
+            <b>
+              Rehabilitar y reinsertar fauna silvestre significa restaurar el
+              equilibrio natural
+            </b>
+            , permitiendo que cada animal vuelva a ocupar el lugar que le
+            corresponde dentro del frágil ecosistema del que forma parte.
+          </p>
+          <p>
+            En Fundación Ñamku trabajamos todos los días por la{" "}
+            <b>
+              protección de la vida silvestre, la conservación de especies
+              nativas y la educación ambiental
+            </b>
+            , porque cada rescate cuenta.
           </p>
         </div>
         <img className="section-img" src={zorrilloImg} alt="imagen" />
@@ -103,16 +126,20 @@ function HomePage() {
       <div className="row">
         <div className="section">
           <h2>Colabora con Nosotros</h2>
-          <h3>
-            Regularmente, organizamos actividades abiertas para nuestros
-            visitantes.
-          </h3>
+          <h3>¡Tu ayuda puede salvar vidas!</h3>
           <p>
-            Para todos estos eventos necesitamos de tu ayuda colaborando en
-            voluntariado, recursos materiales o recursos financieros.
+            Tu apoyo nos permite seguir rescatando, sanando y protegiendo a la
+            fauna silvestre. Puedes colaborar como voluntario, donante o
+            patrocinador.
           </p>
-          <button className="btn-call-to-action">
-            <Link to="/colabora">Colabora</Link>
+          <h3>Súmate hoy y ayúdanos a seguir protegiendo la vida silvestre.</h3>
+          <button
+            className="btn-call-to-action"
+            onClick={() => {
+              window.location.href = "/colabora";
+            }}
+          >
+            <a>Colabora</a>
           </button>
         </div>
         <img className="section-img" src={colaboraImg} alt="imagen" />

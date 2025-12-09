@@ -4,14 +4,14 @@ import DownloadButton from "../../components/DownloadButton/DownloadButton";
 import "./AboutUs.css";
 
 import estatuto from "../../assets/estatuto.pdf";
-import hernandezImg from "../../assets/equipo/hernandez.jpg";
-import salahImg from "../../assets/equipo/salah.jpg";
+import hernandezImg from "../../assets/Finales/Personal-2.jpg";
+import salahImg from "../../assets/Finales/Personal-1.jpg";
 import ananiasImg from "../../assets/equipo/ananias.jpg";
-import pauletteImg from "../../assets/equipo/paulette.jpg";
+import pauletteImg from "../../assets/Finales/Personal-6.png";
 import marcelaImg from "../../assets/equipo/marcela.jpg";
 import nicoleImg from "../../assets/equipo/nicole.jpg";
 import vicenteImg from "../../assets/equipo/vicente.jpg";
-import titleImg from "../../assets/Fotos para web/_AGS8436.jpg";
+import titleImg from "../../assets/DSC_3151.jpg";
 
 function AboutUs() {
   useEffect(() => {
@@ -70,7 +70,7 @@ function AboutUs() {
           src={titleImg}
           alt="imagen de nuestro equipo"
           className="title-bg"
-          style={{ objectPosition: "0% 40%" }}
+          style={{ objectPosition: "0% 30%" }}
         />
         <div className="title-dark-tint"></div>
         <div className="page-title-container">
@@ -78,53 +78,35 @@ function AboutUs() {
         </div>
       </div>
       <div className="title-break"></div>
+      <div className="row alt-bg">
+        <div className="section">
+          <h2>
+            Fundación Ñamku nace del compromiso de médicos veterinarios con la
+            conservación de la fauna silvestre, desarrollando rescate,
+            rehabilitación, investigación y educación ambiental en Chile.
+          </h2>
+        </div>
+      </div>
       <div className="section">
         <h2>¿Quiénes somos?</h2>
         <p>
-          Si alguien nos hubiese dicho hace 20 años que algún día la fauna
-          silvestre se cruzaría en nuestros caminos, probablemente hubiésemos
-          pensado que estábamos locos…
+          Hace más de 30 años, dos estudiantes de Medicina Veterinaria, Pablo
+          Salah Jaar y Eduardo Hernández Antolisei iniciaron un camino que los
+          llevaría a dedicar su vida a la protección de la fauna silvestre. Tras
+          reencontrarse años después como Director y Subdirector del Hospital
+          Clínico Veterinario de la Universidad Santo Tomás de Viña del Mar,
+          asumen el desafío de crear el primer Centro de Rescate y
+          Rehabilitación de Fauna Silvestre de la Región de Valparaíso.
         </p>
         <p>
-          El año 1990 Universidad Santo Tomás abre la primera Escuela de
-          Medicina Veterinaria Privada en Chile. Ese mismo año, Pablo Salah Jaar
-          y Eduardo Hernández Antolisei ingresan a la carrera, obteniendo sus
-          títulos profesionales el año 1995. A partir de ese momento, siguen
-          rumbos distintos, movidos por el interés en diferentes aéreas de la
-          profesión.
-        </p>
-        <p>
-          Veinte años más tarde, ambos veterinarios se reencuentran en su alma
-          máter, a cargo de la Dirección y Subdirección del Hospital Clínico
-          Veterinario Universidad Santo Tomás de Viña del Mar donde, por cosas
-          del destino, asumen el desafío de crear y dirigir el primer Centro de
-          Rescate y Rehabilitación de Fauna Silvestre de la Región de
-          Valparaíso.
-        </p>
-        <p>
-          Así comienza esta aventura, con la pasión y el compromiso por aportar
-          en la conservación de la fauna silvestre.
-        </p>
-        <p>
-          En los últimos años han tenido que enfrentar importantes desafíos
-          ambientales, tales como el rescate y recuperación de aves
-          empetroladas, la intoxicación de cóndores y un sinfín de otras aves y
-          mamíferos que día a día llegan para ser tratados y recuperados.
-        </p>
-        <p>
-          Luego, surge la necesidad de crear el primer Centro de Rehabilitación
-          de Aves Rapaces de la región. Es así como el año 2013 nace Ñamku y
-          comienza a trabajar, -de manera paralela- en conjunto con el Servicio
-          Agrícola Ganadero (SAG) y el Centro de Rescate de Fauna Silvestre del
-          HCV-UST.
-        </p>
-        <p>
-          En 2014 se transforma en la Fundación para la Fauna Silvestre Ñamku,
-          la cual entre sus objetivos, tiene la creación de programas de
-          investigación aplicados a la conservación, -en conjunto con
-          instituciones públicas y privadas, nacionales e internacionales-,
-          capaces de generar cambios significativos mediante la educación
-          medioambiental.
+          En 2013 nació Ñamku, y en 2014 se constituyó oficialmente la Fundación
+          para la Fauna Silvestre Ñamku, trabajando junto al SAG y diversas
+          instituciones. Hoy desarrollamos programas de rescate, rehabilitación,
+          reinserción, investigación y educación ambiental, con un propósito
+          claro:{" "}
+          <b>
+            proteger la biodiversidad y conservar la fauna silvestre de Chile.
+          </b>
         </p>
       </div>
 

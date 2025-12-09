@@ -4,6 +4,7 @@ import "./Contribute.css";
 import PaymentButton from "../../components/PaymentButton/PaymentButton";
 import titleImg from "../../assets/Fotos para web/_AGS4956.jpg";
 import sponsorImg from "../../assets/Fotos para web/_AGS8472-2.jpg";
+import introImg from "../../assets/Fotos para web/_AGS2505.jpg";
 
 function Contribute() {
   useEffect(() => {
@@ -16,7 +17,7 @@ function Contribute() {
           src={titleImg}
           alt="imagen de nuestro equipo"
           className="title-bg"
-          style={{ objectPosition: "0% center" }}
+          style={{ objectPosition: "center 35%" }}
         />
         <div className="title-dark-tint"></div>
         <div className="page-title-container">
@@ -24,36 +25,89 @@ function Contribute() {
         </div>
       </div>
       <div className="title-break"></div>
-      <div className="row section">
-        <div className="contact-row-text">
-          <h2>Colabora con Nosotros</h2>
+
+      <div className="row">
+        <div className="row-text">
+          <h2>Colabora con Fundación Ñamku</h2>
           <p>
-            Dado que somos una fundación sin fines de lucro, todos los aportes
-            son bienvenidos, ya sea a través del voluntariado, donación de
-            especies (materiales de construcción, alimentos para animales,
-            medicamentos, instrumentos quirúrgicos, etc.), o la manera que tú
-            prefieras.
+            Somos una <b>fundación sin fines de lucro</b>, por lo que{" "}
+            <b>cada aporte es fundamental</b> para seguir protegiendo la fauna
+            silvestre.
           </p>
           <p>
-            ¿Quieres ayudar a Fundación Ñamku? ¡Contáctanos y cuéntanos como
-            quieres colaborar!
+            Puedes colaborar de distintas maneras:
+            <ul>
+              <li>Voluntariado</li>
+              <li>
+                Donación de materiales (construcción, insumos, equipamiento)
+              </li>
+              <li>Alimentos para animales</li>
+              <li>Medicamentos e insumos veterinarios</li>
+              <li>Aportes económicos</li>
+            </ul>
+          </p>
+          <p>
+            Tu ayuda se transforma directamente en{" "}
+            <b>
+              medicina, alimentación, infraestructura, rescate, educación y
+              conservación real.
+            </b>
+          </p>
+          <p>
+            <b>
+              Colabora con nosotros y sé parte activa de la protección de la
+              fauna silvestre de Chile.
+            </b>
           </p>
         </div>
-        <div className="contact-row-action">
+        <img src={introImg} alt="imagen de pajaro" className="section-img" />
+      </div>
+
+      <div className="row alt-bg">
+        <div className="section contact-row-text">
+          <h2>¿Quieres ayudar a Fundación Ñamku?</h2>
+          <p>
+            Tu apoyo puede marcar la diferencia en la vida de muchas especies.
+          </p>
+          <p>
+            <b>¡Contáctanos y cuéntanos cómo quieres colaborar!</b>
+          </p>
+          <p>
+            Como voluntario, donante, patrocinador o aliado en la conservación
+            de la fauna silvestre. Cada gesto cuenta. Cada ayuda transforma.
+          </p>
+        </div>
+        <div className="section contact-row-action">
           <ContactForm />
         </div>
       </div>
-      <div className="row alt-bg" id="patrocina">
-        <div className="section">
-          <h2>Conviértete en un Patrocinador</h2>
+      <div className="row" id="patrocina">
+        <div className="row-text">
+          <h2>Conviértete en un Patrocinador de Fundación Ñamku</h2>
           <p>
-            Ayúdanos a cuidar y proteger a las especies. Puedes contribuir al
-            mantenimiento de las especies animales que viven en nuestra region y
-            colaborar en los proyectos de investigación, conservación y
-            educación en los que participamos para ayudar a proteger la vida
-            silvestre amenazada.
+            Como patrocinador apoyas directamente el rescate, la rehabilitación,
+            la investigación y la educación para proteger la fauna silvestre
+            amenazada. Contribuyendo directamente al mantenimiento,
+            alimentación, atención veterinaria y rehabilitación de las especies
+            animales que protegemos.
           </p>
-          <PaymentButton />
+          <p>
+            Tu aporte también apoya nuestros:
+            <ul>
+              <li>Proyectos de investigación en conservación</li>
+              <li>Programas de educación ambiental</li>
+              <li>Rescate y rehabilitación de fauna silvestre amenazada.</li>
+            </ul>
+          </p>
+          <p>
+            <b>
+              Hazte patrocinador hoy y ayúdanos a devolverle una oportunidad a
+              la naturaleza.
+            </b>
+          </p>
+          <div className="contribute-button">
+            <PaymentButton />
+          </div>
         </div>
         <img src={sponsorImg} alt="imagen de pajaro" className="section-img" />
       </div>

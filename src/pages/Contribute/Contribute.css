@@ -14,6 +14,10 @@
   flex: 1;
 }
 
+.contact-row-action h2 {
+  color: var(--color-primary);
+}
+
 .contribute-button {
   display: flex;
   justify-content: center;
