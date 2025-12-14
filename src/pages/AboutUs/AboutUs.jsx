@@ -4,13 +4,19 @@ import DownloadButton from "../../components/DownloadButton/DownloadButton";
 import "./AboutUs.css";
 
 import estatuto from "../../assets/estatuto.pdf";
-import hernandezImg from "../../assets/Finales/Personal-2.jpg";
-import salahImg from "../../assets/Finales/Personal-1.jpg";
-import ananiasImg from "../../assets/equipo/ananias.jpg";
-import pauletteImg from "../../assets/Finales/Personal-6.png";
-import marcelaImg from "../../assets/equipo/marcela.jpg";
-import nicoleImg from "../../assets/equipo/nicole.jpg";
-import vicenteImg from "../../assets/equipo/vicente.jpg";
+import alexisImg from "../../assets/Finales/AlexisHenriquez.jpg";
+import anzineImg from "../../assets/Finales/AnzineSazo.jpg";
+import catalinaImg from "../../assets/Finales/CatalinaAguilera.jpg";
+import cristianImg from "../../assets/Finales/CristianHidalgo.jpg";
+import davidImg from "../../assets/Finales/DavidRodriguez.jpg";
+import eduardoImg from "../../assets/Finales/EduardoHernandez.jpg";
+import karinaImg from "../../assets/Finales/KarinaHenriquez.jpg";
+import nataliaImg from "../../assets/Finales/NataliaMorales.jpg";
+import nicolasImg from "../../assets/Finales/NicolasEnriquez.jpg";
+import pabloImg from "../../assets/Finales/PabloSalah.jpg";
+import pauletteImg from "../../assets/Finales/PauletteAbarca.png";
+import sebastianImg from "../../assets/Finales/SebastianZamorano.jpg";
+
 import titleImg from "../../assets/DSC_3151.jpg";
 
 function AboutUs() {
@@ -20,46 +26,66 @@ function AboutUs() {
 
   const teamData = [
     {
-      name: "Dr. Eduardo Hernández Antolisei",
+      name: "Eduardo Hernández Antolisei",
       title: "Director",
-      image: hernandezImg,
-      bio: "Médico Veterinario UST, doctor en Medicina y Sanidad Animal por la Universidad de Córdoba España. Docente en el área de cirugía de la Universidad Santo Tomás Viña del Mar.",
+      image: eduardoImg,
+      // bio: "Médico Veterinario UST, doctor en Medicina y Sanidad Animal por la Universidad de Córdoba España. Docente en el área de cirugía de la Universidad Santo Tomás Viña del Mar.",
     },
     {
-      name: "Dr. Pablo Salah Jaar",
+      name: "Pablo Salah Jaar",
       title: "Director",
-      image: salahImg,
-      bio: "Médico Veterinario UST, Magíster en Ciencias Veterinarias de la Universidad de Chile. Docente en el área de clínica equina de la Universidad Santo Tomás Viña del Mar.",
-    },
-    {
-      name: "Julio Ananías Cattan",
-      title: "Director",
-      image: ananiasImg,
-      bio: "Ingeniero Civil de la PUC. Oficial de Enlace para World Animal Protection. Experto en Marketing, Ventas y Relaciones Institucionales.",
+      image: pabloImg,
+      // bio: "Médico Veterinario UST, Magíster en Ciencias Veterinarias de la Universidad de Chile. Docente en el área de clínica equina de la Universidad Santo Tomás Viña del Mar.",
     },
     {
       name: "Paulette Abarca Mora",
-      title: "",
+      title: "Jefa Área Médica",
       image: pauletteImg,
-      bio: "Médico Veterinario, especialista en manejo y bienestar animal en fauna silvestre. Participante de proyectos del Museo de Historia Natural.",
     },
     {
-      name: "Marcela Maturana Tealdo",
-      title: "",
-      image: marcelaImg,
-      bio: "Licenciada en ciencias veterinarias. Coordinadora de medios audiovisuales, redes y comunicación externa de Fundación Ñamku.",
+      name: "Catalina Aguilera Vallejos",
+      title: "Encargada de Bienestar Animal",
+      image: catalinaImg,
     },
     {
-      name: "Nicole Heck Madina",
-      title: "",
-      image: nicoleImg,
-      bio: "Licenciada en Ciencias Veterinarias con experiencia internacional en rescate y rehabilitación de fauna marina.",
+      name: "Alexis Henriquez Salgado",
+      title: "Médico Veterinaria",
+      image: alexisImg,
     },
     {
-      name: "Vicente González Olivares",
-      title: "",
-      image: vicenteImg,
-      bio: "Médico Veterinario, Especialista en Fauna Silvestre y Monitor de Humedales. Experiencia en rescate de fauna marina.",
+      name: "David Rodriguez Jaque",
+      title: "Médico Veterinario",
+      image: davidImg,
+    },
+    {
+      name: "Karina Henríquez Gómez",
+      title: "Ingeniero Ambiental",
+      image: karinaImg,
+    },
+    {
+      name: "Natalia Morales Hernández",
+      title: "Médico Veterinaria",
+      image: nataliaImg,
+    },
+    {
+      name: "Nicolás Enríquez Rentería",
+      title: "Médico Veterinario División San Antonio",
+      image: nicolasImg,
+    },
+    {
+      name: "Sebastián Zamorano Santibáñez",
+      title: "Técnico Veterinario División San Antonio",
+      image: sebastianImg,
+    },
+    {
+      name: "Cristian Hidalgo Jara",
+      title: "Ingeniero Ambiental División San Antonio",
+      image: cristianImg,
+    },
+    {
+      name: "Anzine Sazo Leyton",
+      title: "Técnico Veterinaria División El Melón",
+      image: anzineImg,
     },
   ];
 
@@ -110,7 +136,7 @@ function AboutUs() {
         </p>
       </div>
 
-      <div className="section">
+      <div className="section team-section">
         <h2>Nuestro Equipo de Trabajo</h2>
         <div className="team-grid">
           {teamData.map((member, index) => (

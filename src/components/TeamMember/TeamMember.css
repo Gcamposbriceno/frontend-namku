@@ -5,6 +5,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-bottom: 3px solid transparent; /* Pre-reserve space for border */
+  max-width: 300px;
 }
 
 .team-member-card:hover {
@@ -44,6 +45,8 @@
   font-size: 1.2rem;
   color: #333;
   font-weight: 700;
+  line-height: 1.3;
+  min-height: 2.6em;
 }
 
 .member-role {
