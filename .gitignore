@@ -26,4 +26,4 @@ dev_files
 .env
 *.md
 
-Fotos_Personal_Namku/*
+src/assets/Fotos_Personal_Namku/*
