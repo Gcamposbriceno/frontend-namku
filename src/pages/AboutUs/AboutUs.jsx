@@ -103,7 +103,7 @@ function AboutUs() {
     },
     {
       name: "Sebastián Moreno Guerrero",
-      title: "Asistente de Terreno División El Melón",
+      title: "Asesor en Terreno División El Melón",
       image: sebastianMImg,
     },
     {
