@@ -12,18 +12,15 @@ function Contact() {
   }, []);
   return (
     <div className="content">
-      <div>
+      <div className="page-title-container">
         <img
           src={titleImg}
           alt="imagen de nuestro equipo"
           className="title-bg"
         />
         <div className="title-dark-tint"></div>
-        <div className="page-title-container">
-          <h1 className="page-title">Contacto</h1>
-        </div>
+        <h1 className="page-title">Contacto</h1>
       </div>
-      <div className="title-break"></div>
       <div className="row section">
         <div className="contact-row-text">
           <h2>Contáctanos</h2>

@@ -12,19 +12,16 @@ function Contribute() {
   }, []);
   return (
     <div className="content">
-      <div>
+      <div className="page-title-container">
         <img
           src={titleImg}
           alt="imagen de nuestro equipo"
           className="title-bg"
-          style={{ objectPosition: "center 35%" }}
+          style={{ objectPosition: "center 100%" }}
         />
         <div className="title-dark-tint"></div>
-        <div className="page-title-container">
-          <h1 className="page-title">Colabora</h1>
-        </div>
+        <h1 className="page-title">Colabora</h1>
       </div>
-      <div className="title-break"></div>
 
       <div className="row">
         <div className="row-text">

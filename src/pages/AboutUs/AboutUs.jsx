@@ -91,7 +91,7 @@ function AboutUs() {
 
   return (
     <div className="content">
-      <div>
+      <div className="page-title-container">
         <img
           src={titleImg}
           alt="imagen de nuestro equipo"
@@ -99,9 +99,7 @@ function AboutUs() {
           style={{ objectPosition: "0% 30%" }}
         />
         <div className="title-dark-tint"></div>
-        <div className="page-title-container">
-          <h1 className="page-title">Nosotros</h1>
-        </div>
+        <h1 className="page-title">Nosotros</h1>
       </div>
       <div className="title-break"></div>
       <div className="row alt-bg">
