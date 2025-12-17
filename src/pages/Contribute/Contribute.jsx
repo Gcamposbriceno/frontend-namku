@@ -17,7 +17,7 @@ function Contribute() {
           src={titleImg}
           alt="imagen de nuestro equipo"
           className="title-bg"
-          style={{ objectPosition: "center 100%" }}
+          style={{ objectPosition: "center 70%" }}
         />
         <div className="title-dark-tint"></div>
         <h1 className="page-title">Colabora</h1>
