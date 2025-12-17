@@ -8,9 +8,9 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "./HomePage.css";
 
-import hero1 from "../../assets/img/mt-1475-home-header-bg.jpg";
+import hero1 from "../../assets/mt-1475-home-header-bg.jpg";
 import campanaImg from "../../assets/3LucaxlaFauna.png";
-import aboutUsHero from "../../assets/DSC_3147.jpg";
+import aboutUsHero from "../../assets/Fotos para web/DSC_3147.jpg";
 import zorrilloImg from "../../assets/Fotos para web/_AGS5398.jpg";
 import colaboraImg from "../../assets/Fotos para web/_AGS4948.jpg";
 

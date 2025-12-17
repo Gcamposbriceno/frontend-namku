@@ -9,15 +9,19 @@ import anzineImg from "../../assets/Finales/AnzineSazo.jpg";
 import catalinaImg from "../../assets/Finales/CatalinaAguilera.jpg";
 import cristianImg from "../../assets/Finales/CristianHidalgo.jpg";
 import davidImg from "../../assets/Finales/DavidRodriguez.jpg";
+import diegoImg from "../../assets/Finales/DiegoVergara.jpg";
 import eduardoImg from "../../assets/Finales/EduardoHernandez.jpg";
+import julioImg from "../../assets/Finales/JulioAnanias.jpeg";
 import karinaImg from "../../assets/Finales/KarinaHenriquez.jpg";
 import nataliaImg from "../../assets/Finales/NataliaMorales.jpg";
 import nicolasImg from "../../assets/Finales/NicolasEnriquez.jpg";
 import pabloImg from "../../assets/Finales/PabloSalah.jpg";
 import pauletteImg from "../../assets/Finales/PauletteAbarca.png";
-import sebastianImg from "../../assets/Finales/SebastianZamorano.jpg";
+import rodrigoImg from "../../assets/Finales/RodrigoGonzalez.jpg";
+import sebastianZImg from "../../assets/Finales/SebastianZamorano.jpg";
+import sebastianMImg from "../../assets/Finales/SebastianMoreno.jpeg";
 
-import titleImg from "../../assets/DSC_3151.jpg";
+import titleImg from "../../assets/Fotos para web/DSC_3151.jpg";
 
 function AboutUs() {
   useEffect(() => {
@@ -36,6 +40,11 @@ function AboutUs() {
       title: "Director",
       image: pabloImg,
       // bio: "Médico Veterinario UST, Magíster en Ciencias Veterinarias de la Universidad de Chile. Docente en el área de clínica equina de la Universidad Santo Tomás Viña del Mar.",
+    },
+    {
+      name: "Julio Ananías Cattan",
+      title: "Gerente de Administración",
+      image: julioImg,
     },
     {
       name: "Paulette Abarca Mora",
@@ -73,9 +82,14 @@ function AboutUs() {
       image: nicolasImg,
     },
     {
+      name: "Diego Vergara Villar",
+      title: "Médico Veterinario División San Antonio",
+      image: diegoImg,
+    },
+    {
       name: "Sebastián Zamorano Santibáñez",
       title: "Técnico Veterinario División San Antonio",
-      image: sebastianImg,
+      image: sebastianZImg,
     },
     {
       name: "Cristian Hidalgo Jara",
@@ -86,6 +100,16 @@ function AboutUs() {
       name: "Anzine Sazo Leyton",
       title: "Técnico Veterinaria División El Melón",
       image: anzineImg,
+    },
+    {
+      name: "Sebastián Moreno Guerrero",
+      title: "Asistente de Terreno División El Melón",
+      image: sebastianMImg,
+    },
+    {
+      name: "Rodrigo González González",
+      title: "Encargado Mantención Centro Rescate Concón",
+      image: rodrigoImg,
     },
   ];
 
