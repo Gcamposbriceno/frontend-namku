@@ -42,7 +42,7 @@ function HomePage() {
           </SwiperSlide>
 
           <SwiperSlide className="slide-content">
-            <Link to="/colabora#patrocina">
+            <Link to="https://www.webpay.cl/company/171156?utm_source=transbank&utm_medium=portal3.0&utm_campaign=link_portal">
               <img
                 src={campanaImg}
                 alt="Nature 2"
