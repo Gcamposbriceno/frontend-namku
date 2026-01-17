@@ -23,6 +23,37 @@ function Contribute() {
         <h1 className="page-title">Colabora</h1>
       </div>
 
+      <div className="row" id="patrocina">
+        <img src={sponsorImg} alt="imagen de pajaro" className="section-img" />
+        <div className="row-text">
+          <h2>Conviértete en un Patrocinador de Fundación Ñamku</h2>
+          <p>
+            Como patrocinador apoyas directamente el rescate, la rehabilitación,
+            la investigación y la educación para proteger la fauna silvestre
+            amenazada. Contribuyendo directamente al mantenimiento,
+            alimentación, atención veterinaria y rehabilitación de las especies
+            animales que protegemos.
+          </p>
+          <p>
+            Tu aporte también apoya nuestros:
+            <ul>
+              <li>Proyectos de investigación en conservación</li>
+              <li>Programas de educación ambiental</li>
+              <li>Rescate y rehabilitación de fauna silvestre amenazada.</li>
+            </ul>
+          </p>
+          <p>
+            <b>
+              Hazte patrocinador hoy y ayúdanos a devolverle una oportunidad a
+              la naturaleza.
+            </b>
+          </p>
+          <div className="contribute-button">
+            <PaymentButton />
+          </div>
+        </div>
+      </div>
+
       <div className="row">
         <div className="row-text">
           <h2>Colabora con Fundación Ñamku</h2>
@@ -77,36 +108,6 @@ function Contribute() {
         <div className="section contact-row-action">
           <ContactForm />
         </div>
-      </div>
-      <div className="row" id="patrocina">
-        <div className="row-text">
-          <h2>Conviértete en un Patrocinador de Fundación Ñamku</h2>
-          <p>
-            Como patrocinador apoyas directamente el rescate, la rehabilitación,
-            la investigación y la educación para proteger la fauna silvestre
-            amenazada. Contribuyendo directamente al mantenimiento,
-            alimentación, atención veterinaria y rehabilitación de las especies
-            animales que protegemos.
-          </p>
-          <p>
-            Tu aporte también apoya nuestros:
-            <ul>
-              <li>Proyectos de investigación en conservación</li>
-              <li>Programas de educación ambiental</li>
-              <li>Rescate y rehabilitación de fauna silvestre amenazada.</li>
-            </ul>
-          </p>
-          <p>
-            <b>
-              Hazte patrocinador hoy y ayúdanos a devolverle una oportunidad a
-              la naturaleza.
-            </b>
-          </p>
-          <div className="contribute-button">
-            <PaymentButton />
-          </div>
-        </div>
-        <img src={sponsorImg} alt="imagen de pajaro" className="section-img" />
       </div>
     </div>
   );

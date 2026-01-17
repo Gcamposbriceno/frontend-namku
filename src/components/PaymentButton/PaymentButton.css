@@ -1,2 +1,27 @@
-.payment-button {
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(59, 100, 144, 0.7);
+  }
+
+  70% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 15px rgba(59, 100, 144, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(59, 100, 144, 0);
+  }
+}
+
+.btn-call-to-action {
+  animation: heartbeat 2s infinite;
+  will-change: transform, box-shadow;
+}
+
+.btn-call-to-action:hover {
+  animation: none;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
