@@ -27,6 +27,9 @@ function Contribute() {
         <img src={sponsorImg} alt="imagen de pajaro" className="section-img" />
         <div className="row-text">
           <h2>Conviértete en un Patrocinador de Fundación Ñamku</h2>
+          <div className="contribute-button">
+            <PaymentButton />
+          </div>
           <p>
             Como patrocinador apoyas directamente el rescate, la rehabilitación,
             la investigación y la educación para proteger la fauna silvestre
@@ -48,9 +51,6 @@ function Contribute() {
               la naturaleza.
             </b>
           </p>
-          <div className="contribute-button">
-            <PaymentButton />
-          </div>
         </div>
       </div>
 
