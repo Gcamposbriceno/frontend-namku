@@ -7,7 +7,7 @@ function PaymentButton() {
 
   return (
     <button className="btn-call-to-action" onClick={handleClick}>
-      <a>Hazte Patrocinador</a>
+      <a>DONA AQUÍ</a>
     </button>
   );
 }
